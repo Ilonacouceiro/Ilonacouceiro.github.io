@@ -1,3 +1,3 @@
 # Ilonacouceiro.github.io
-portfolio (demo)
+Portfolio
 https://ilonacouceiro.github.io
