@@ -1,0 +1,160 @@
+body{
+    font-family: sans-serif;
+}
+
+@font-face {
+  font-family: "Nyght serif";
+  src: url(webfonts/NyghtSerif-LightItalic.woff);
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+.header{
+    background: white;
+    display: grid;
+    position: sticky;
+    top: 0%;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+h1 {
+  font-family: "Nyght serif", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: xx-large;
+  letter-spacing: 1px;
+}
+
+.header-title{
+    background: white;
+}
+
+.header-nav{
+  background: white;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50px;
+  margin-left: 5px;
+  transition: 0.1s ease-out;
+}
+.nav{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+}
+
+.nav a{
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50px;
+  color: black;
+}
+
+.nav .current{
+  color: white;
+  background-color: black;
+}
+
+.index .grid{
+    display: grid;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (min-width: 768px){
+  .index .grid {
+    grid-template-columns: repeat(2, minmax(320px,1fr));
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1280px){
+  .index .grid {
+    grid-template-columns: repeat(3, minmax(320px,1fr));
+    font-size: 25px;
+  }
+}
+
+.accroche{
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  grid-column: 1/4;
+}
+
+.accroche h2{
+  font-family: "Nyght serif";
+  font-size: 90px;
+}
+
+.item{
+    display:grid;
+    width:fit-content;
+    height: fit-content;
+    background: #000;
+    text-decoration: none;
+  
+  }
+  .item>*{
+    grid-column: 1;
+    grid-row:1;
+    justify-self:center;
+    align-self:center;
+    color:#fff;
+    transition:1s;
+  }
+  .item p{
+    font-size: 25px;
+    opacity:0;
+  }
+  .item:hover img{
+    opacity:0;
+  }
+  .item:hover p{
+    opacity:1;
+  }
+
+.about{
+  display: grid;
+  max-width: 600px;
+  margin: auto;
+  height: calc(100vh - 320px);
+}
+.about a{
+  text-decoration:underline;
+}
+
+.portrait{
+  justify-self:center;
+    align-self:center;
+}
+
+.footer{
+  font-size: 12px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.footer a{
+  text-decoration:underline;
+}
+
+a:visited{
+  color: black;
+  font-weight: normal;
+}
+
+.grande-image{
+  grid-column: 1/-1;
+}  
