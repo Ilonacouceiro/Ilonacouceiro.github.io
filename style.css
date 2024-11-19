@@ -24,6 +24,7 @@ img{
     background: white;
     display: grid;
     position: sticky;
+    z-index: 999;
     top: 0;
     grid-template-columns: max-content max-content;
     justify-content: space-between;
@@ -97,6 +98,30 @@ h1 {
   border-radius: 50px;
   color: black;
 }
+
+.marquee .block{
+  display:block;
+}
+.marquee{
+  font-family: sans-serif;
+  margin:0;
+  overflow:hidden;
+  display:block;
+  color: white;
+  background-color: black;
+
+}
+
+.marquee .text{
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  font-size: 15px;
+  height:35px;
+  line-height:35px;
+}
+
 
 a{
   cursor: url('img/curseur@2x.png') 25 25, auto;
@@ -190,10 +215,31 @@ a{
   text-decoration:none ;
 }
 
-.portrait{
-  justify-self:center;
-    align-self:center;
+.image-container {
+  justify-self: center;
+  align-self: center;
 }
+
+/* Image de base */
+.vibrate-image {
+  width: 250px; /* Ajustez la taille de l'image selon vos besoins */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animation de vibration */
+@keyframes vibration {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+/* Appliquer l'animation lors du survol */
+.vibrate-image:hover {
+  animation: vibration 0.5s linear infinite;
+}
+
 
 .footer{
   font-size: 10px;
@@ -247,7 +293,6 @@ a{
   gap: 30px;
   justify-content: center;
 }
-
 
 
 @media (min-width:640px){
