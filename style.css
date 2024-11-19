@@ -28,7 +28,7 @@ img{
     top: 0;
     grid-template-columns: max-content max-content;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .spin {
@@ -37,7 +37,6 @@ img{
   height: 200px;
   margin-top: 9px;
   margin-left: 10px;
-
 }
 /* tournitourni */
 .spin {
@@ -88,7 +87,7 @@ h1 {
 .nav{
   display: grid;
   grid-auto-flow: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav a{
@@ -144,14 +143,12 @@ a{
 @media (min-width: 768px){
   .index .grid {
     grid-template-columns: repeat(2, minmax(320px,1fr));
-    font-size: 15px;
   }
 }
 
 @media (min-width: 1280px){
   .index .grid {
     grid-template-columns: repeat(3, minmax(320px,1fr));
-    font-size: 25px;
   }
 }
 
@@ -165,7 +162,7 @@ a{
 
 .accroche h2{
   font-family: "Nyght serif";
-  font-size: 70px;
+  font-size: 45px;
 }
 
 .item{
@@ -200,7 +197,7 @@ a{
   display: grid;
   max-width: 600px;
   margin: auto;
-  height: calc(100vh - 320px);
+  min-height: calc(100vh - 320px);
 }
 .about a{
   text-decoration:underline;
