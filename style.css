@@ -140,7 +140,7 @@ a{
     justify-items: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 640px){
   .index .grid {
     grid-template-columns: repeat(2, minmax(320px,1fr));
   }
