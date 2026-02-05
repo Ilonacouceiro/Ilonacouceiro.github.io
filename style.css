@@ -6,13 +6,13 @@ body{
 }
 
 @font-face {
-  font-family: "Nyght serif";
-  src: url(webfonts/NyghtSerif-LightItalic.woff);
+  font-family: "Avenir";
+  src: url(webfonts/Avenir\ Regular.ttf);
 }
 
 @font-face {
-  font-family: "KHTeka";
-  src: url(webfonts/KHTekaTRIAL-Regular.woff);
+  font-family: "Quicksand";
+  src: url(webfonts/Quicksand-Light.ttf);
 }
 
 img{
@@ -63,7 +63,7 @@ animation: spin 10s linear infinite;
   }
 
 h1 {
-  font-family: "Nyght serif", sans-serif;
+  font-family: "Avenir";
   font-weight: 500;
   font-style: normal;
   font-size: xx-large;
@@ -102,7 +102,7 @@ h1 {
   display:block;
 }
 .marquee{
-  font-family: sans-serif;
+  font-family: "Avenir";
   margin:0;
   overflow:hidden;
   display:block;
@@ -161,7 +161,7 @@ a{
 }
 
 .accroche h2{
-  font-family: "Nyght serif";
+  font-family: "Avenir";
   font-size: 70px;
 }
 
@@ -183,7 +183,7 @@ a{
   }
   .item p{
     font-size: 23px;
-    font-family: "KHTeka";
+    font-family: "Avenir";
     opacity:0;
   }
   .item:hover img{
