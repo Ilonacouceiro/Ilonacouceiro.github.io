@@ -64,9 +64,8 @@ animation: spin 10s linear infinite;
 
 h1 {
   font-family: "Avenir";
-  font-size: 8px;
+  font-size: 15px;
   font-style: normal;
-  font-size: xx-large;
   margin-left: 80px;
 }
 
@@ -91,7 +90,7 @@ h1 {
 
 .nav a{
   font-family: "Avenir";
-  font-size: 8px;
+  font-size: 15px;
   text-decoration: none;
   border: 1px solid black;
   padding: 10px;
@@ -354,5 +353,5 @@ a{
 }
 .tiitle {
   font-family: "Avenir";
-  font-size: 25px;
+  font-size: 40px;
 }
