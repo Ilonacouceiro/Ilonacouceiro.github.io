@@ -90,7 +90,7 @@ h1 {
 
 .nav a{
   font-family: "Avenir";
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   border: 1px solid black;
   padding: 10px;
@@ -353,5 +353,5 @@ a{
 }
 .tiitle {
   font-family: "Avenir";
-  font-size: 45px;
+  font-size: 30px;
 }
