@@ -195,7 +195,7 @@ a{
 
 .about{
   display: grid;
-  max-width: 450px;
+  max-width: 440px;
   margin: auto;
   min-height: calc(100vh - 320px);
 }
