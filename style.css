@@ -219,7 +219,7 @@ a{
 
 /* Image de base */
 .vibrate-image {
-  width: 250px; /* Ajustez la taille de l'image selon vos besoins */
+  width: 440px; /* Ajustez la taille de l'image selon vos besoins */
   transition: transform 0.2s ease-in-out;
 }
 
