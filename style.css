@@ -162,7 +162,7 @@ a{
 
 .accroche h2{
   font-family: "Avenir";
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .item{
@@ -195,7 +195,7 @@ a{
 
 .about{
   display: grid;
-  max-width: 440px;
+  max-width: 500px;
   margin: auto;
   min-height: calc(100vh - 320px);
 }
@@ -219,7 +219,7 @@ a{
 
 /* Image de base */
 .vibrate-image {
-  width: 440px; /* Ajustez la taille de l'image selon vos besoins */
+  width: 250px; /* Ajustez la taille de l'image selon vos besoins */
   transition: transform 0.2s ease-in-out;
 }
 
