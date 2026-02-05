@@ -162,7 +162,7 @@ a{
 
 .accroche h2{
   font-family: "Avenir";
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .item{
@@ -195,7 +195,7 @@ a{
 
 .about{
   display: grid;
-  max-width: 550px;
+  max-width: 500px;
   margin: auto;
   min-height: calc(100vh - 320px);
 }
@@ -353,5 +353,5 @@ a{
 }
 .tiitle {
   font-family: "Avenir";
-  font-size: 60px;
+  font-size: 30px;
 }
