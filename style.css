@@ -64,11 +64,10 @@ animation: spin 10s linear infinite;
 
 h1 {
   font-family: "Avenir";
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: xx-large;
-  letter-spacing: 1px;
-  margin-left: 75px;
+  margin-left: 80px;
 }
 
 .header-title{
@@ -353,6 +352,6 @@ a{
   }
 }
 .tiitle {
-  font-family: "Nyght Serif";
+  font-family: "Avenir";
   font-size: 30px;
 }
