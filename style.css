@@ -313,19 +313,27 @@ a{
   }
 
   h1{
+      font-family: "Avenir";
       font-size: 20px;
   }
 
   h2{
+      font-family: "Quicksand Medium";
       font-size: 20px;
   }
   
   h3{
+      font-family: "Quicksand Regular";
       font-size: 15px;
   }
   .tiitle {
   font-family: "Avenir";
   font-size: 20px;
+  }
+
+  p{
+  font-family: "Quicksand";
+  font-size: 10px;
   }
 }
 
@@ -340,18 +348,26 @@ a{
   }
   
   h1{
+      font-family: "Avenir";
       font-size: 30px;
   }
 
   h2{
+      font-family: "Quicksand Medium";
       font-size: 30px;
   }
   
   h3{
-      font-size: 15px;
+      font-family: "Quicksand Regular";
+      font-size: 20px;
   }
   .tiitle {
   font-family: "Avenir";
   font-size: 30px;
+  }
+
+  p{
+  font-family: "Quicksand";
+  font-size: 15px;
   }
 }
