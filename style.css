@@ -15,6 +15,16 @@ body{
   src: url(webfonts/Quicksand-Light.ttf);
 }
 
+@font-face {
+  font-family: "Quicksand Regular";
+  src: url(webfonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Quicksand Medium";
+  src: url(webfonts/Quicksand-Medium.ttf);
+}
+
 img{
     max-width: 100%;
     height:auto;
@@ -311,7 +321,7 @@ a{
   }
   
   h3{
-      font-size: 9px;
+      font-size: 15px;
   }
   .tiitle {
   font-family: "Avenir";
@@ -322,7 +332,7 @@ a{
 @media (min-width:1040px){
   .Projets{
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       max-width: 700px;
       margin: auto;
       justify-content: center;
