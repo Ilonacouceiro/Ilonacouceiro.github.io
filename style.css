@@ -294,7 +294,7 @@ a{
 
 .Projets{
   display: grid;
-  padding: 15%;
+  padding: 24px;
   max-width: 1000px;
   margin: auto;
   gap: 30px;
@@ -338,7 +338,7 @@ a{
       justify-content: center;
       gap: 25px;
   }
-
+  
   h1{
       font-size: 30px;
   }
