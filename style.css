@@ -67,7 +67,13 @@ img{
   100%{-webkit-transform: rotate(360deg);}
   }
 
-h1{
+h1, h2, .tiitle{
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  font-synthesis: none; /* interdit le faux gras */
+}
+
+  h1{
   font-family: "Avenir";
   font-size: 30px;
   font-style: normal;
@@ -79,6 +85,12 @@ h1{
 h1, .nav a, .accroche h2{
   font-family: "Avenir", sans-serif;
   font-weight: 400;
+}
+
+h2{
+  font-size: 30px; /* ou la taille que tu veux */
+  margin: 0;
+  line-height: 1.15;
 }
 
 @font-face {
@@ -332,24 +344,18 @@ a{
   }
 
   h1{
-      font-family: "Avenir";
-       margin: 0;         
+      margin: 0;         
       font-size: 20px;
       line-height: 1.1;
   }
 
-  h2{
-      font-family: "Avenir";
+  h2, .tiitle{
       font-size: 20px;
   }
   
   h3{
       font-family: "Quicksand Regular";
       font-size: 13px;
-  }
-  .tiitle {
-  font-family: "Avenir";
-  font-size: 20px;
   }
 
   p{
