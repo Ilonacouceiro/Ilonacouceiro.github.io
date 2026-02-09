@@ -100,7 +100,7 @@ h1 {
 
 .nav a{
   font-family: "Avenir";
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   border: 1px solid black;
   padding: 10px;
@@ -301,7 +301,7 @@ a{
   justify-content: center;
 }
 
-@media (max-width:640px){
+@media (max-width:639px){
   .Projets{
       display: grid;
       padding: 2%;
@@ -338,13 +338,13 @@ a{
 
   .nav a{
   font-family: "Avenir";
-  font-size: 13px;
+  font-size: 10px;
   }
 
-  .spin {
-  width: 100px;
-  height: 100px;
-}
+  .spin{
+    width: clamp(24px, 8vw, 36px);
+    height: clamp(24px, 8vw, 36px);
+  }
 }
 
 @media (min-width:1040px){
@@ -383,14 +383,6 @@ a{
 
   .nav a{
   font-family: "Avenir";
-  font-size: 16px;
+  font-size: 15px;
   }
-
-  .spin {
-  display: block;
-  width: 200px;
-  height: 200px;
-  margin-top: 9px;
-  margin-left: 10px;
-}
 }
