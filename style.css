@@ -76,11 +76,26 @@ h1 {
   font-family: "Avenir";
   font-size: 30px;
   font-style: normal;
-  margin-left: 80px;
+  margin-left: 0;
+}
+
+h1, .nav a{
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(webfonts/Avenir\ Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header-title{
     background: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .header-nav{
@@ -103,9 +118,13 @@ h1 {
   font-size: 15px;
   text-decoration: none;
   border: 1px solid black;
-  padding: 10px;
-  border-radius: 50px;
   color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px; 
+  line-height: 1; 
 }
 
 .marquee .block{
@@ -313,14 +332,15 @@ a{
   }
 
   .header{
-    padding: 10px 12px;
+    padding: 6px 10px;
     grid-template-columns: 1fr auto;
   }
 
   h1{
       font-family: "Avenir";
-      margin-left: 44px; 
+       margin: 0;         
       font-size: 20px;
+      line-height: 1.1;
   }
 
   h2{
@@ -356,6 +376,11 @@ a{
   .spin{
     width: clamp(24px, 8vw, 36px);
     height: clamp(24px, 8vw, 36px);
+  }
+
+  .header-title{
+    padding-left: 0;
+    gap: 10px;
   }
 }
 
@@ -396,5 +421,10 @@ a{
   .nav a{
   font-family: "Avenir";
   font-size: 15px;
+  padding: 8px 14px;
+  }
+
+  .header-title{
+    padding-left: 70px;
   }
 }
