@@ -1,5 +1,6 @@
 body{
     -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
     font-family: sans-serif;
     cursor: url('img/curseur@2x.png') 25 25, auto;
     margin-top: 0;
@@ -85,6 +86,8 @@ h1, h2, .tiitle{
 h1, .nav a, .accroche h2{
   font-family: "Avenir", sans-serif;
   font-weight: 400;
+  font-synthesis: none;
+  text-shadow: 0 0 0.35px currentColor;
 }
 
 h2{
@@ -96,7 +99,7 @@ h2{
 @font-face {
   font-family: "Avenir";
   src: url(webfonts/Avenir\ Regular.ttf);
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
