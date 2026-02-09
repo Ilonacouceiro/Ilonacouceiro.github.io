@@ -312,8 +312,14 @@ a{
     grid-column: 1 / -1;
   }
 
+  .header{
+    padding: 10px 12px;
+    grid-template-columns: 1fr auto;
+  }
+
   h1{
       font-family: "Avenir";
+      margin-left: 44px; 
       font-size: 20px;
   }
 
@@ -338,7 +344,13 @@ a{
 
   .nav a{
   font-family: "Avenir";
+  padding: 6px 10px; 
   font-size: 10px;
+  line-height: 1; 
+  }
+
+  .nav{
+    gap: 6px;
   }
 
   .spin{
