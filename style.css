@@ -30,36 +30,30 @@ img{
     height:auto;
 }
 
+:root{
+  --stroke: 1px;     /* desktop */
+}
+
 .header{
     background: white;
     display: grid;
     position: sticky;
     z-index: 999;
     top: 0;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: auto 1fr auto;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
 }
 
-.spin {
-  display: block;
-  width: 200px;
-  height: 200px;
-  margin-top: 9px;
-  margin-left: 10px;
-}
-/* tournitourni */
-.spin {
-display: block;
-position: fixed;
-width: 50px;
-height: 50px;
-left:0.5%;
-top: 0.5%;
-
--webkit-animation: spin 10s linear infinite;
--moz-animation: spin 10s linear infinite;
-animation: spin 10s linear infinite;
+.spin{
+  position: static;           
+  width: 42px;
+  height: 42px;
+  margin: 0;                      
+  flex: 0 0 auto;
+  animation: spin 10s linear infinite;
 }
 
 @-webkit-keyframes spin{
@@ -107,10 +101,18 @@ h1, .nav a{
   margin-left: 5px;
   transition: 0.1s ease-out;
 }
+
+.filet{
+  border: none;
+  border-top: var(--stroke) solid black;
+  margin: 0;
+}
+
 .nav{
   display: grid;
   grid-auto-flow: column;
   gap: 5px;
+  border: var(--stroke) solid black;
 }
 
 .nav a{
@@ -334,6 +336,7 @@ a{
   .header{
     padding: 6px 10px;
     grid-template-columns: 1fr auto;
+    gap: 10px;
   }
 
   h1{
@@ -374,13 +377,17 @@ a{
   }
 
   .spin{
-    width: clamp(24px, 8vw, 36px);
-    height: clamp(24px, 8vw, 36px);
+    width: 28px;
+    height: 28px;
   }
 
   .header-title{
     padding-left: 0;
     gap: 10px;
+  }
+
+  :root{
+    --stroke: 0.75px; /* mobile (plus fin) */
   }
 }
 
