@@ -324,7 +324,7 @@ a{
   
   h3{
       font-family: "Quicksand Regular";
-      font-size: 15px;
+      font-size: 13px;
   }
   .tiitle {
   font-family: "Avenir";
@@ -335,6 +335,16 @@ a{
   font-family: "Quicksand";
   font-size: 10px;
   }
+
+  .nav a{
+  font-family: "Avenir";
+  font-size: 13px;
+  }
+
+  .spin {
+  width: 100px;
+  height: 100px;
+}
 }
 
 @media (min-width:1040px){
@@ -370,4 +380,17 @@ a{
   font-family: "Quicksand";
   font-size: 15px;
   }
+
+  .nav a{
+  font-family: "Avenir";
+  font-size: 16px;
+  }
+
+  .spin {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-top: 9px;
+  margin-left: 10px;
+}
 }
