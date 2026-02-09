@@ -35,24 +35,25 @@ img{
 }
 
 .header{
-    background: white;
-    display: grid;
-    position: sticky;
-    z-index: 999;
-    top: 0;
-    grid-template-columns: auto 1fr auto;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 16px;
+  background: white;
+  display: grid;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+
+  /* ✅ 3 éléments = 3 colonnes */
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  gap: 12px;
+  padding: 10px 16px;
 }
 
 .spin{
-  position: static;           
   width: 42px;
   height: 42px;
-  margin: 0;                      
-  flex: 0 0 auto;
+  margin: 0;
+  display: block;
   animation: spin 10s linear infinite;
 }
 
@@ -66,16 +67,13 @@ img{
   100%{-webkit-transform: rotate(360deg);}
   }
 
-h1 {
+h1{
   font-family: "Avenir";
   font-size: 30px;
   font-style: normal;
-  margin-left: 0;
-}
-
-h1, .nav a{
-  font-weight: 400;
-  -webkit-text-size-adjust: 100%;
+  margin: 0;            /* ✅ évite la hauteur chelou */
+  line-height: 1.1;
+  justify-self: start;  /* ✅ reste à gauche */
 }
 
 @font-face {
@@ -92,41 +90,40 @@ h1, .nav a{
     gap: 12px;
 }
 
-.header-nav{
-  background: white;
-  text-decoration: none;
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 50px;
-  margin-left: 5px;
-  transition: 0.1s ease-out;
-}
-
-.filet{
-  border: none;
-  border-top: var(--stroke) solid black;
-  margin: 0;
-}
-
 .nav{
-  display: grid;
-  grid-auto-flow: column;
-  gap: 5px;
-  border: var(--stroke) solid black;
+  display: flex;
+  gap: 8px;
+  justify-self: end;
 }
 
+/* PILULES */
 .nav a{
   font-family: "Avenir";
   font-size: 15px;
   text-decoration: none;
-  border: 1px solid black;
   color: black;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 12px;
-  border-radius: 999px; 
-  line-height: 1; 
+
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: var(--stroke) solid black;
+  line-height: 1;
+}
+
+/* état actif */
+.nav .current{
+  color: white;
+  background: black;
+}
+
+/* FILET */
+.filet{
+  border: none;
+  border-top: var(--stroke) solid black;
+  margin: 0;
 }
 
 .marquee .block{
@@ -155,11 +152,6 @@ h1, .nav a{
 
 a{
   cursor: url('img/curseur@2x.png') 25 25, auto;
-}
-
-.nav .current{
-  color: white;
-  background-color: black;
 }
 
 .index .grid{
@@ -323,6 +315,7 @@ a{
 }
 
 @media (max-width:639px){
+  :root{ --stroke: 0.75px; }
   .Projets{
       display: grid;
       padding: 2%;
@@ -335,7 +328,7 @@ a{
 
   .header{
     padding: 6px 10px;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
     gap: 10px;
   }
 
