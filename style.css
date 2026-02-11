@@ -199,7 +199,7 @@ a{
 
 .accroche h2{
   font-family: "Avenir";
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .item{
@@ -390,6 +390,10 @@ a{
   :root{
     --stroke: 0.75px; /* mobile (plus fin) */
   }
+
+  .accroche h2{
+  font-size: 35px;
+  }
 }
 
 @media (min-width:1040px){
@@ -434,5 +438,9 @@ a{
 
   .header-title{
     padding-left: 0px;
+  }
+
+  .accroche h2{
+  font-size: 50px;
   }
 }
