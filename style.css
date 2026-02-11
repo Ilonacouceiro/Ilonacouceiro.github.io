@@ -215,14 +215,27 @@ a{
   margin: 0;
 }
 
-.item{
+  .item{
     display:grid;
     width:fit-content;
     height: fit-content;
-    background: rgba(0, 0, 0, 0.55);
+    position: relative;
+    overflow: hidden;
+    background: none; /* important : on enlève le fond ici */
     text-decoration: none;
   
   }
+
+  .item::after{
+  content:"";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* noir + transparence */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  } 
+
   .item>*{
     grid-column: 1;
     grid-row:1;
@@ -231,16 +244,27 @@ a{
     color:#fff;
     transition:1s;
   }
+
+  .item:hover::after{
+  opacity: 1;
+  }
+
   .item p{
     font-size: 15px;
     font-family: "Avenir";
     opacity:0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    margin: 0;
   }
-  .item:hover img{
-    opacity:0;
-  }
+
   .item:hover p{
     opacity:1;
+  }
+
+  .item img{
+  z-index: 0;
+  transition: opacity 0.3s ease; /* optionnel */
   }
 
 .about{
