@@ -353,17 +353,17 @@ a{
   }
 
   h2, .tiitle{
-      font-size: 15px;
+      font-size: 18px;
   }
   
   h3{
       font-family: "Quicksand Regular";
-      font-size: 13px;
+      font-size: 14px;
   }
 
   p{
   font-family: "Quicksand";
-  font-size: 11px;
+  font-size: 12px;
   }
 
   .nav a{
@@ -409,21 +409,21 @@ a{
 
   h2{
       font-family: "Avenir";
-      font-size: 17px;
+      font-size: 20px;
   }
   
   h3{
       font-family: "Quicksand Regular";
-      font-size: 15px;
+      font-size: 16px;
   }
   .tiitle {
   font-family: "Avenir";
-  font-size: 17px;
+  font-size: 20px;
   }
 
   p{
   font-family: "Quicksand";
-  font-size: 13px;
+  font-size: 14px;
   }
 
   .nav a{
