@@ -205,7 +205,8 @@ a{
   justify-self: center;
   text-align: center;
   grid-column: 1/-1;
-  padding: 120px 0;
+  padding-block: clamp(35px, 7vw, 120px);
+  padding-inline: 0;
 }
 
 .accroche h2{
@@ -401,10 +402,6 @@ a{
 
   :root{
     --stroke: 0.75px; /* mobile (plus fin) */
-  }
-
-  .accroche{
-    padding: 55px 0; /* mobile -> ajuste 40/50/60 si besoin */
   }
 
   .accroche h2{
