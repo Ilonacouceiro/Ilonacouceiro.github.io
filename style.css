@@ -348,17 +348,17 @@ a{
 
   h1{
       margin: 0;         
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.1;
   }
 
   h2, .tiitle{
-      font-size: 20px;
+      font-size: 18px;
   }
   
   h3{
       font-family: "Quicksand Regular";
-      font-size: 13px;
+      font-size: 12px;
   }
 
   p{
@@ -404,17 +404,17 @@ a{
   
   h1{
       font-family: "Avenir";
-      font-size: 30px;
+      font-size: 23px;
   }
 
   h2{
       font-family: "Avenir";
-      font-size: 30px;
+      font-size: 23px;
   }
   
   h3{
       font-family: "Quicksand Regular";
-      font-size: 18px;
+      font-size: 17px;
   }
   .tiitle {
   font-family: "Avenir";
