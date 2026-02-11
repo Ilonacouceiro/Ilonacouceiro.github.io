@@ -211,6 +211,7 @@ a{
 .accroche h2{
   font-family: "Avenir";
   font-size: 50px;
+  margin: 0;
 }
 
 .item{
@@ -402,9 +403,13 @@ a{
     --stroke: 0.75px; /* mobile (plus fin) */
   }
 
+  .accroche{
+    padding: 55px 0; /* mobile -> ajuste 40/50/60 si besoin */
+  }
+
   .accroche h2{
     font-size: 25px;
-    padding: 45px 0 55px 0;
+    padding: 0;
   }
 
   .italic{
