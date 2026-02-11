@@ -195,6 +195,7 @@ a{
   justify-self: center;
   text-align: center;
   grid-column: 1/-1;
+  padding: clamp(60px, 10vh, 140px) 0;
 }
 
 .accroche h2{
