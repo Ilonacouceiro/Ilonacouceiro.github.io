@@ -232,7 +232,7 @@ a{
     transition:1s;
   }
   .item p{
-    font-size: 23px;
+    font-size: 15px;
     font-family: "Avenir";
     opacity:0;
   }
@@ -412,6 +412,10 @@ a{
   .italic{
   font-size: 25px;
   }
+
+  .item p{
+    font-size: 12px;
+  }
 }
 
 @media (min-width:1040px){
@@ -464,5 +468,9 @@ a{
 
   .italic{
   font-size: 55px;
+  }
+
+  .item p{
+    font-size: 15px;
   }
 }
