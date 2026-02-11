@@ -26,6 +26,11 @@ html{
   src: url(webfonts/Quicksand-Medium.ttf);
 }
 
+@font-face {
+  font-family: "Agrandir Light";
+  src: url(webfonts/Agrandir-ThinItalic.otf);
+}
+
 img{
     max-width: 100%;
     height:auto;
@@ -74,7 +79,12 @@ h1, h2, .tiitle{
   font-synthesis: none; /* interdit le faux gras */
 }
 
-  h1{
+.italic{
+  font-family: "Agrandir Light";
+  font-synthesis: none; 
+}
+
+h1{
   font-family: "Avenir";
   font-size: 30px;
   font-style: normal;
@@ -395,6 +405,10 @@ a{
   .accroche h2{
   font-size: 35px;
   }
+
+  .italic{
+  font-size: 35px;
+  }
 }
 
 @media (min-width:1040px){
@@ -442,6 +456,10 @@ a{
   }
 
   .accroche h2{
+  font-size: 50px;
+  }
+
+  .italic{
   font-size: 50px;
   }
 }
