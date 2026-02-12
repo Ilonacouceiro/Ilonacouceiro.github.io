@@ -499,6 +499,13 @@ a{
   padding: 8px 14px;
   }
 
+  .about-actions{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap; /* sur petit écran ça passe à la ligne proprement */
+  }
+
   .header-title{
     padding-left: 0px;
   }
