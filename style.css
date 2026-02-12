@@ -273,8 +273,12 @@ a{
   padding: 24px;
   min-height: calc(100vh - 320px);
   justify-items: start;
-  gap: clamp(16px, 3vw, 32px);
 }
+
+.about-actions{
+  margin-top: 12px; /* ajuste : 8px / 10px / 12px */
+}
+
 .about a{
   text-decoration:underline;
 }
@@ -295,6 +299,7 @@ a{
 .image-container {
   justify-self: center;
   align-self: center;
+  margin-block: clamp(18px, 4vw, 36px);
 }
 
 /* Image de base */
@@ -458,6 +463,13 @@ a{
     padding: 2%;     /* ✅ mêmes “marches” que tes pages projet */
     width: 100%;
     box-sizing: border-box;
+  }
+
+  .image-container{
+    margin-block: 22px; /* un peu plus grand sur téléphone */
+  }
+  .about-actions{
+    margin-top: 10px;
   }
 }
 
