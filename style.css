@@ -173,7 +173,6 @@ h2{
   line-height:35px;
 }
 
-
 a{
   cursor: url('img/curseur@2x.png') 25 25, auto;
 }
@@ -269,7 +268,7 @@ a{
 
 .about{
   display: grid;
-  max-width: 700px;
+  max-width: 650px;
   margin: auto;
   padding: 24px;
   min-height: calc(100vh - 320px);
