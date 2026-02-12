@@ -269,9 +269,11 @@ a{
 
 .about{
   display: grid;
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
+  padding: 24px;
   min-height: calc(100vh - 320px);
+  justify-items: start;
 }
 .about a{
   text-decoration:underline;
@@ -451,6 +453,12 @@ a{
   .item p{
     font-size: 12px;
   }
+  
+  .about{
+    padding: 2%;     /* ✅ mêmes “marches” que tes pages projet */
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width:1040px){
@@ -502,7 +510,7 @@ a{
   .about-actions{
   display: flex;
   gap: 8px;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap; /* sur petit écran ça passe à la ligne proprement */
   }
 
