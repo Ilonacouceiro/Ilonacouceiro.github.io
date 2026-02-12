@@ -268,7 +268,7 @@ a{
 
 .about{
   display: grid;
-  max-width: 600px;
+  max-width: 550px;
   margin: auto;
   padding: 24px;
   min-height: calc(100vh - 320px);
