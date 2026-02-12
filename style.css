@@ -278,12 +278,16 @@ a{
 }
 .extern.extern{
   text-decoration: none;
-  border: 1px solid black;
-  padding: 10px 12px;
-  border-radius: 50px;
-  margin: 15px 0;
-  display: inline-block;
-  text-decoration:none ;
+  font-family: "Avenir";
+  font-size: 15px;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: var(--stroke) solid black;
+  line-height: 1;
 }
 
 .image-container {
@@ -410,6 +414,13 @@ a{
   line-height: 1; 
   }
 
+  .extern.extern{
+  font-family: "Avenir";
+  font-size: 12px;
+  padding: 6px 10px;
+  line-height: 1;
+  }
+
   .nav{
     gap: 5px;
   }
@@ -477,6 +488,12 @@ a{
   }
 
   .nav a{
+  font-family: "Avenir";
+  font-size: 15px;
+  padding: 8px 14px;
+  }
+
+  .extern.extern{
   font-family: "Avenir";
   font-size: 15px;
   padding: 8px 14px;
