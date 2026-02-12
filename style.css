@@ -273,6 +273,7 @@ a{
   padding: 24px;
   min-height: calc(100vh - 320px);
   justify-items: start;
+  gap: clamp(16px, 3vw, 32px);
 }
 .about a{
   text-decoration:underline;
