@@ -299,7 +299,7 @@ a{
 .image-container {
   justify-self: center;
   align-self: center;
-  margin-block: clamp(28px, 6vw, 56px);
+  margin-block: clamp(24px, 5vw, 48px);
 }
 
 /* Image de base */
